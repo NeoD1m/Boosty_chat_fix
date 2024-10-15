@@ -21,7 +21,7 @@
         let welcomeMessageFound = false;
 
         innerScrollContainer.childNodes.forEach(child => {
-            if (child.nodeType === 1 && child.children.length > 0) { // Check if child is an element and has at least one child
+            if (child.nodeType === 1 && child.children.length > 0) {
                 const grandChild = child.children[0];
                 if (grandChild.textContent.trim() === 'Welcome to chat') {
                     welcomeMessageFound = true;
